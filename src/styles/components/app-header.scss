@@ -1,0 +1,15 @@
+.App-header {
+  height: 6.5rem;
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid $dark-gray;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: 0.8s;
+  background-color: $light;
+
+  button {
+    margin: 2rem;
+  }
+}

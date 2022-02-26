@@ -1,0 +1,27 @@
+@import "./variables.scss";
+@forward "./variables.scss" as var*;
+@import "./reset";
+@import "../components/app";
+@import "../components/app-header";
+@import "../components/productList";
+@import "../components/product";
+
+html {
+  font-family: $main;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+button {
+  @include btn();
+}

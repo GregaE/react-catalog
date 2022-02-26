@@ -1,0 +1,73 @@
+.Product {
+  background-color: $light;
+  height: auto;
+  width: 30rem;
+  min-width: 30rem;
+  max-height: 42rem;
+  border-radius: 5px;
+  border: 1px solid $dark-gray;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 0 10px $green;
+    transform: scale(1.02);
+  }
+
+  .product-image {
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    text-transform: capitalize;
+  }
+
+  .product-info > :last-child {
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+  .btn-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+      opacity: 1;
+    }
+  }
+
+  .danger {
+    color: $danger;
+    border: 1px solid $danger;
+
+    &:hover {
+      color: $light;
+      background-color: $danger;
+    }
+  }
+}
